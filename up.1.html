@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>up(1)</title>
+<link rel="stylesheet" href="stylesheets/man.css">
+
+<body id="wrapper">
+
+<header id="man-header">
+  <table>
+    <tr>
+      <td class="left">up(1)</td>
+      <td class="center">UP MANUAL</td>
+      <td class="right">up(1)</td>
+    </tr>
+  </table>
+</header>
+
+<article id="man-page">
+<h2 id="NAME">NAME</h2>
+
+<p><strong>up</strong> -- serve any directory of static files over HTTP lickety-split</p>
+
+<h2 id="SYNOPSIS">SYNOPSIS</h2>
+
+<p><code>up</code> [&lt;OPTIONS&gt;...]</p>
+
+<h2 id="DESCRIPTION">DESCRIPTION</h2>
+
+<p><strong>up</strong> simply serves the specified root directory (or current working
+directory) over HTTP.</p>
+
+<h2 id="OPTIONS">OPTIONS</h2>
+
+<ul><li><p><code>--addr</code>=&lt;host&gt;:&lt;port&gt;</p><dd>The &lt;host&gt; and/or &lt;port&gt; on which to listen (default is <code>0.0.0.0:1337</code>).</dd></li><li><p><code>--root</code>=&lt;path&gt;</p><dd>The &lt;path&gt; from which to serve files (default is current working directory).</dd></li><li><p><code>--version</code></p><dd>Display the version and exit.</dd></li></ul>
+
+<h2 id="EXAMPLES">EXAMPLES</h2>
+
+<p>Serve the current working directory on the default port:</p>
+
+<pre><code>$ up</code></pre>
+
+<p>Serve the current working directory on port <code>3000</code>:</p>
+
+<pre><code>$ up --addr=:3000</code></pre>
+
+<p>Serve the current working directory at <code>localhost</code> with the default port:</p>
+
+<pre><code>$ up --addr=localhost</code></pre>
+
+<p>Serve the current working directory at <code>localhost</code> on port <code>3000</code>:</p>
+
+<pre><code>$ up --addr=localhost:3000</code></pre>
+
+<p>Serve <code>/var/www/</code> at <code>localhost</code> on port <code>3000</code>:</p>
+
+<pre><code>$ up --addr=localhost:3000 --root=/var/www</code></pre>
+
+<h2 id="COPYRIGHT">COPYRIGHT</h2>
+
+<p><strong>up</strong> is Copyright (c) 2012 execjosh (<a href="http://execjosh.blogspot.com/">http://execjosh.blogspot.com/</a>)</p>
+</article>
+
+<footer id="man-footer">
+  <table>
+    <tr>
+      <td class="left">UP 0.1.0</td>
+      <td class="center">&nbsp;</td>
+      <td class="right">up(1)</td>
+    </tr>
+  </table>
+</footer>
+
+</body>
