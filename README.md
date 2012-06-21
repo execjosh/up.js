@@ -29,7 +29,8 @@ Supported Media Types
 
 ```json
 {
-  ".css": "text/css"
+  ".coffee": "text/coffeescript"
+, ".css": "text/css"
 , ".html": "text/html"
 , ".js": "application/javascript"
 , ".json": "application/json"

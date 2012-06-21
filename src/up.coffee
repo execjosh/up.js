@@ -7,6 +7,7 @@ util = require "util"
 # Get media type based on file extension
 ext2mediaType = do ->
   mediaTypeMap =
+    ".coffee": "text/coffeescript"
     ".css": "text/css"
     ".html": "text/html"
     ".js": "application/javascript"
