@@ -1,0 +1,48 @@
+up(1) -- serve any directory of static files over HTTP lickety-split
+========================================================================
+
+## SYNOPSIS
+
+`up` [<OPTIONS>...]
+
+## DESCRIPTION
+
+**up** simply serves the specified root directory (or current working
+directory) over HTTP.
+
+## OPTIONS
+
+  * `--addr`=<host>:<port>:
+    The <host> and/or <port> on which to listen (default is `0.0.0.0:1337`).
+
+  * `--root`=<path>:
+    The <path> from which to serve files (default is current working directory).
+
+  * `--version`:
+    Display the version and exit.
+
+## EXAMPLES
+
+Serve the current working directory on the default port:
+
+    $ up
+
+Serve the current working directory on port `3000`:
+
+    $ up --addr=:3000
+
+Serve the current working directory at `localhost` with the default port:
+
+    $ up --addr=localhost
+
+Serve the current working directory at `localhost` on port `3000`:
+
+    $ up --addr=localhost:3000
+
+Serve `/var/www/` at `localhost` on port `3000`:
+
+    $ up --addr=localhost:3000 --root=/var/www
+
+## COPYRIGHT
+
+**up** is Copyright (c) 2012 execjosh (<http://execjosh.blogspot.com/>)

@@ -1,0 +1,30 @@
+{
+  "author": "execjosh (http://execjosh.blogspot.com/)",
+  "name": "up",
+  "description": "A simple static file HTTP server for node.js useful for quickly serving files",
+  "version": "0.1.0",
+  "homepage": "http://execjosh.github.com/up.js/",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/execjosh/up.js.git"
+  },
+  "licenses": [{
+    "type": "MIT",
+    "url": "http://opensource.org/licenses/mit-license.php"
+  }],
+  "main": "./lib/up.js",
+  "bin": {
+    "up": "./bin/up"
+  },
+  "preferGlobal": true,
+  "directories": {
+    "lib": "./lib",
+    "man": "./man"
+  },
+  "engines": {
+    "node": ">=0.4.0"
+  },
+  "devDependencies": {
+    "ronn": "~0.3.8"
+  }
+}
